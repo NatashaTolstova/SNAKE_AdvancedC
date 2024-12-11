@@ -89,10 +89,8 @@ void moveSnake(snake_t *snake)
 
 void setDir(snake_t *snake, enum Direction dir)
 {
-    if ((snake->dir + dir) % 3)
-    {
+    if (snake->dir == UP && dir != DOWN)
         snake->dir = dir;
-    }
 }
 
 int eatHandler(snake_t *snake, apple_t *apple)
