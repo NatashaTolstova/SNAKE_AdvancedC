@@ -3,6 +3,7 @@
 
 #include "typedefs.h"
 #include "settings.h"
+#include "snake.h"
 
 typedef struct
 {
