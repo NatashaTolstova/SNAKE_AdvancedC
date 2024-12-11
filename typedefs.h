@@ -25,21 +25,4 @@ typedef struct
     int y;
 } tail_t;
 
-typedef struct
-{
-    int x;
-    int y;
-    enum Direction dir;
-    tail_t *tail;
-    size_t tsize;
-    control_buttons *butCtrl;
-} snake_t;
-
-typedef struct
-{
-    int x;
-    int y;
-    int weigt;
-} apple_t;
-
 #endif /* __TIPEDEFS_H__ */
