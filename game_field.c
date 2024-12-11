@@ -19,12 +19,7 @@ void clearGameField(char matrix[][MAX_Y])
 
 void printGameField(char matrix[][MAX_Y])
 {
-    // не придумал как это решить (TODO)
-    // const char SNAKE_HEAD_1 = '@';
-    // const char SNAKE_TAIL_1 = '*';
-    // const char SNAKE_HEAD_2 = '%';
-    // const char SNAKE_TAIL_2 = '+';
-
+    
     // рисуем все поле
     for (int j = 0; j < MAX_Y; ++j)
     {
