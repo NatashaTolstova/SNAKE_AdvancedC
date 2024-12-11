@@ -4,6 +4,13 @@
 #include "typedefs.h"
 #include "settings.h"
 
+typedef struct
+{
+    int x;
+    int y;
+    int weigt;
+} apple_t;
+
 apple_t initApple(int x, int y, int weigt);
 void printApple(apple_t *apple, char matrix[][MAX_Y]);
 void generateNewApple(snake_t *snake, apple_t *apple);
