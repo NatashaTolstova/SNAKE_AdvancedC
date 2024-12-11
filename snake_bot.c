@@ -25,33 +25,6 @@ void autoChangeDirection(snake_t *snake, apple_t *apple)
     int lockDir[4] = {0};
     for (int i = 0; i < 4; i++)
     {
-        lockDir[i] #include "snake_bot.h"
-#include "math.h"
-
-enum Direction opposite_direction(enum Direction dir)
-{
-    switch (dir)
-    {
-    case UP:
-        return DOWN;
-    case DOWN:
-        return UP;
-
-    case LEFT:
-        return RIGHT;
-
-    default:
-        return LEFT;
-    }
-}
-
-int newDir;
-
-void autoChangeDirection(snake_t *snake, apple_t *apple)
-{
-    int lockDir[4] = {0};
-    for (int i = 0; i < 4; i++)
-    {
         lockDir[i] = 0;
     }
     int dX = snake->x - apple->x;
